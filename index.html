@@ -171,6 +171,73 @@
                      </div>
                  </div>
                  
+                 <div class="col-lg-3 col-md-6">
+                     <div class="card bg-dark border-secondary p-3 h-100">
+                         <div class="card-body">
+                             <div class="d-flex justify-content-between align-items-start mb-3">
+                                 <h5 class="card-title text-light fw-bold">Topic 3: CORS</h5>
+                                 <i class="bi bi-shield-lock-fill fs-4 text-secondary"></i>
+                             </div>
+                             <p class="card-text text-secondary mb-3">Cross-Origin Resource Sharing</p>
+                             <button type="button" class="btn btn-outline-secondary btn-sm" 
+                                     data-bs-toggle="modal" 
+                                     data-bs-target="#pksModal3">
+                                 View Notes
+                             </button>
+                         </div>
+                     </div>
+                 </div>
+                 
+                 <div class="col-lg-3 col-md-6">
+                     <div class="card bg-dark border-secondary p-3 h-100">
+                         <div class="card-body">
+                             <div class="d-flex justify-content-between align-items-start mb-3">
+                                 <h5 class="card-title text-light fw-bold">Topic 4: GUI</h5>
+                                 <i class="bi bi-display-fill fs-4 text-secondary"></i>
+                             </div>
+                             <p class="card-text text-secondary mb-3">Graphical User Interface</p>
+                             <button type="button" class="btn btn-outline-secondary btn-sm" 
+                                     data-bs-toggle="modal" 
+                                     data-bs-target="#pksModal4">
+                                 View Notes
+                             </button>
+                         </div>
+                     </div>
+                 </div>
+
+                 <div class="col-lg-3 col-md-6">
+                     <div class="card bg-dark border-secondary p-3 h-100">
+                         <div class="card-body">
+                             <div class="d-flex justify-content-between align-items-start mb-3">
+                                 <h5 class="card-title text-light fw-bold">Topic 5: Laravel Framework</h5>
+                                 <i class="bi bi-lightning-charge-fill fs-4 text-secondary"></i>
+                             </div>
+                             <p class="card-text text-secondary mb-3">PHP Web Application Framework</p>
+                             <button type="button" class="btn btn-outline-secondary btn-sm" 
+                                     data-bs-toggle="modal" 
+                                     data-bs-target="#pksModal5">
+                                 View Notes
+                             </button>
+                         </div>
+                     </div>
+                 </div>
+
+                 <div class="col-lg-3 col-md-6">
+                     <div class="card bg-dark border-secondary p-3 h-100">
+                         <div class="card-body">
+                             <div class="d-flex justify-content-between align-items-start mb-3">
+                                 <h5 class="card-title text-light fw-bold">Topic 6: POSTMAN</h5>
+                                 <i class="bi bi-wrench-adjustable fs-4 text-secondary"></i>
+                             </div>
+                             <p class="card-text text-secondary mb-3">API Development and Testing Tool</p>
+                             <button type="button" class="btn btn-outline-secondary btn-sm" 
+                                     data-bs-toggle="modal" 
+                                     data-bs-target="#pksModal6">
+                                 View Notes
+                             </button>
+                         </div>
+                     </div>
+                 </div>
              </div> 
          </section>
          <hr class="text-secondary my-5 container">
@@ -244,7 +311,7 @@
           <div class="modal-header border-bottom border-secondary">
             <h5 class="modal-title" id="projectModal1Label">Budget Tracking System Screenshots</h5>
             <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
+           </div>
           <div class="modal-body text-center">
             <img src="assets/images/budget-tracker-screenshot.jpg" class="img-fluid rounded" alt="Budget Tracking System Screenshot">
           </div>
@@ -301,25 +368,25 @@
                 </div>
                 <div class="modal-body">
                     <h4>What is REST?</h4>
-                    <p><strong>REST (Representational State Transfer)</strong> is an architectural style for building web services. It's not a protocol but a set of constraints used for creating efficient, reliable, and scalable web applications.</p>
+                    <p><strong>REST (Representational State Transfer)</strong> is an architectural style for building web services. It's a set of constraints used for creating efficient, reliable, and scalable web applications.</p>
                     
                     <h4 class="mt-4">REST Principles</h4>
                     <ul>
-                        <li><strong>Client-Server Architecture:</strong> The client (frontend) and server (backend) are separate and independent.</li>
-                        <li><strong>Stateless:</strong> Each request from the client to the server must contain all the information needed to understand the request. The server cannot store client context between requests.</li>
-                        <li><strong>Cacheable:</strong> Responses can be defined as cacheable or non-cacheable to improve performance.</li>
-                        <li><strong>Uniform Interface (Key Feature):</strong> Uses standard HTTP methods (GET, POST, PUT, DELETE) to interact with resources.</li>
+                        <li>**Client-Server Architecture:** The client (frontend) and server (backend) are separate and independent.</li>
+                        <li>**Stateless:** Each request from the client must contain all information needed to process it. The server does not store session state.</li>
+                        <li>**Cacheable:** Responses can be explicitly defined as cacheable or non-cacheable to improve performance.</li>
+                        <li>**Uniform Interface (Key Feature):** Uses standard **HTTP methods** (GET, POST, PUT, DELETE) to interact with resources.</li>
                     </ul>
                     
                     <h4 class="mt-4">HTTP Methods (CRUD Operations)</h4>
                     <dl>
-                        <dt><code>GET</code></dt>
+                        <dt>GET</dt>
                         <dd>Retrieves a resource (Read operation).</dd>
-                        <dt><code>POST</code></dt>
+                        <dt>POST</dt>
                         <dd>Creates a new resource (Create operation).</dd>
-                        <dt><code>PUT</code> / <code>PATCH</code></dt>
+                        <dt>PUT / PATCH</dt>
                         <dd>Updates an existing resource (Update operation).</dd>
-                        <dt><code>DELETE</code></dt>
+                        <dt>DELETE</dt>
                         <dd>Removes a resource (Delete operation).</dd>
                     </dl>
                 </div>
@@ -339,21 +406,117 @@
                 </div>
                 <div class="modal-body">
                     <h4>What is Swagger UI?</h4>
-                    <p><strong>Swagger UI</strong> is an open-source tool that renders **API documentation** from an **OpenAPI Specification** (OAS, formerly known as Swagger Spec) file in a visually engaging and interactive way.</p>
+                    <p><strong>Swagger UI</strong> is an open-source tool that renders **API documentation** from an **OpenAPI Specification (OAS)** file in an interactive and user-friendly web interface.</p>
                     
                     <h4 class="mt-4">Key Benefits</h4>
                     <ul>
-                        <li><strong>Interactive Documentation:</strong> Allows developers and non-developers to interact with the API endpoints directly in the browser (e.g., testing <code>GET</code> and <code>POST</code> requests).</li>
-                        <li><strong>Standardized Format:</strong> Uses the OpenAPI Specification to ensure documentation is structured and machine-readable.</li>
-                        <li><strong>Easy Integration:</strong> Can be easily integrated into most web application frameworks (like Laravel, Node.js, etc.).</li>
+                        <li>**Interactive Testing:** Allows developers and non-developers to send live requests to the API directly from the documentation page.</li>
+                        <li>**Standardized Format:** Ensures documentation is always synchronized with the API logic when following the OAS standards.</li>
+                        <li>**Ease of Use:** Provides a clear visual representation of API endpoints, parameters, and response structures.</li>
+                    </ul>
+                </div>
+                <div class="modal-footer border-top border-secondary">
+                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="pksModal3" tabindex="-1" aria-labelledby="pksModal3Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable">
+            <div class="modal-content bg-dark text-light border-secondary">
+                <div class="modal-header border-bottom border-secondary">
+                    <h5 class="modal-title" id="pksModal3Label">CORS (Cross-Origin Resource Sharing) Notes</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h4>What is CORS?</h4>
+                    <p><strong>CORS (Cross-Origin Resource Sharing)</strong> is a mechanism that allows a web browser to permit or deny web pages from one domain (origin) to request resources from another domain (cross-origin).</p>
+                    
+                    <h4 class="mt-4">Relation to SOP</h4>
+                    <ul>
+                        <li>It is used to override the default browser security feature called the **Same-Origin Policy (SOP)**.</li>
+                        <li>SOP blocks requests from one domain to another to prevent security risks like CSRF (Cross-Site Request Forgery).</li>
+                        <li>CORS is necessary when your frontend (e.g., Vercel) is on a different domain than your backend API.</li>
                     </ul>
                     
                     <h4 class="mt-4">How it Works</h4>
-                    <ol>
-                        <li>Developer creates an <strong>OpenAPI Specification (OAS)</strong> file (usually YAML or JSON) detailing the API endpoints, parameters, and response models.</li>
-                        <li>Swagger UI reads this file.</li>
-                        <li>Swagger UI generates a beautiful, interactive web page that lists the API resources and allows users to "Try it out."</li>
-                    </ol>
+                    <p>The API server must send specific **HTTP headers** (like `Access-Control-Allow-Origin`) in its response, explicitly telling the browser which domains are allowed to access the resource.</p>
+                </div>
+                <div class="modal-footer border-top border-secondary">
+                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="pksModal4" tabindex="-1" aria-labelledby="pksModal4Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable">
+            <div class="modal-content bg-dark text-light border-secondary">
+                <div class="modal-header border-bottom border-secondary">
+                    <h5 class="modal-title" id="pksModal4Label">GUI (Graphical User Interface) Notes</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h4>What is GUI?</h4>
+                    <p>A **GUI (Graphical User Interface)** is a system that allows users to interact with computers or software using **visual representations** like icons, windows, menus, and buttons, instead of typing text commands.</p>
+                    
+                    <h4 class="mt-4">Key Elements</h4>
+                    <ul>
+                        <li>**Visuals:** Icons, windows, dialog boxes, and graphics.</li>
+                        <li>**Input:** Buttons, checkboxes, text fields, and scroll bars.</li>
+                        <li>**User-Friendly:** GUIs are the standard interface because they are intuitive and easy to navigate compared to the Command-Line Interface (CLI).</li>
+                    </ul>
+                </div>
+                <div class="modal-footer border-top border-secondary">
+                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="pksModal5" tabindex="-1" aria-labelledby="pksModal5Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable">
+            <div class="modal-content bg-dark text-light border-secondary">
+                <div class="modal-header border-bottom border-secondary">
+                    <h5 class="modal-title" id="pksModal5Label">Laravel Framework Notes</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h4>What is Laravel?</h4>
+                    <p><strong>Laravel</strong> is an open-source **PHP web application framework** known for its elegant, expressive syntax and use of the **Model-View-Controller (MVC)** architectural pattern.</p>
+                    
+                    <h4 class="mt-4">Core Components</h4>
+                    <ul>
+                        <li>**Eloquent ORM:** An Object-Relational Mapper that allows you to interact with your database using clear PHP objects instead of writing raw SQL.</li>
+                        <li>**MVC:** Separates application logic (Controller), data structure (Model), and presentation (View).</li>
+                        <li>**Artisan:** A powerful command-line tool used to automate repetitive programming tasks, such as managing database migrations and creating boilerplate code.</li>
+                    </ul>
+                </div>
+                <div class="modal-footer border-top border-secondary">
+                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="pksModal6" tabindex="-1" aria-labelledby="pksModal6Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable">
+            <div class="modal-content bg-dark text-light border-secondary">
+                <div class="modal-header border-bottom border-secondary">
+                    <h5 class="modal-title" id="pksModal6Label">POSTMAN Notes</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h4>What is Postman?</h4>
+                    <p><strong>Postman</strong> is a collaborative platform for **API development** and testing. It allows developers to easily design, document, and debug various types of APIs (REST, SOAP, GraphQL).</p>
+                    
+                    <h4 class="mt-4">Key Uses</h4>
+                    <ul>
+                        <li>**API Testing:** Used to send precise HTTP requests (GET, POST, etc.) and inspect the responses (status codes, body data, headers).</li>
+                        <li>**Collections:** Organizes and groups requests for easy sharing and automated testing (test suites).</li>
+                        <li>**Environments:** Enables the saving of variables (like URLs or API keys) to switch easily between development, staging, and production environments.</li>
+                    </ul>
                 </div>
                 <div class="modal-footer border-top border-secondary">
                     <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
