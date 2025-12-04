@@ -1,35 +1,69 @@
-/* Custom CSS in assets/css/style.css */
+/* Custom CSS for Dark Aesthetic and Component Overrides */
 
-/* Makes the anchor tag wrapping the card stretch its full size */
+/* --- 1. Global / Body Styles --- */
+
+/* Ensures the entire page background is a deep dark color */
+body {
+    background-color: #121212 !important; 
+    color: #f0f0f0; /* Default light text color */
+}
+
+/* Fixes the position of the fixed navbar */
+#main-nav {
+    top: 0;
+    width: 100%;
+    z-index: 1030; /* Higher than other content */
+    background-color: rgba(0, 0, 0, 0.95) !important; /* Slightly transparent black */
+}
+
+/* --- 2. Card Styles (Projects and PKS) --- */
+
+/* Base style for all cards */
+.card {
+    background-color: #1A1A1A !important; /* Darker background for contrast */
+    border: 1px solid #333333 !important; /* Subtle border */
+    transition: transform 0.2s, box-shadow 0.2s; 
+}
+
+/* Makes the anchor/div wrapper fill the entire card area */
 .card-link {
     display: block; 
     height: 100%;
+    text-decoration: none; /* Remove underline from links */
 }
 
-/* Base style for the card itself */
-.card {
-    background-color: #1a1a1a !important; 
-    border: 1px solid #333333 !important; 
-    transition: transform 0.2s, border-color 0.2s; /* Smooth transition */
+/* Hover effect on the clickable card wrapper */
+.project-card-trigger:hover .card {
+    transform: translateY(-5px); /* Lifts the card slightly */
+    box-shadow: 0 8px 15px rgba(255, 255, 255, 0.1); /* Adds light shadow */
+    border-color: #666666 !important; /* Highlight border */
 }
 
-/* Hover effect on the card (when linked) */
-.card-link:hover .card {
-    transform: translateY(-5px); /* Lifts the card */
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); /* Adds a shadow */
-    border-color: #f0f0f0 !important; /* Makes the border slightly lighter */
-}
-
-/* Styling for the description text */
+/* Custom styling for card descriptions and secondary text */
 .card-text {
     color: #b0b0b0 !important;
 }
 
-/* Styling for the tech stack badges */
+/* --- 3. Badge/Tag Styles (Tech Stack) --- */
+
 .badge {
     background-color: #333333 !important;
     color: #ffffff !important;
     font-weight: normal;
     padding: 0.5em 0.75em;
     border-radius: 0.25rem;
+}
+
+/* --- 4. Form Overrides (Contact Section) --- */
+
+.form-control {
+    background-color: #1A1A1A !important; 
+    border-color: #333333 !important;
+    color: #f0f0f0 !important;
+}
+
+.form-control:focus {
+    background-color: #1A1A1A !important;
+    border-color: #666666 !important;
+    box-shadow: 0 0 0 0.25rem rgba(108, 117, 125, 0.25); /* Subtle focus ring */
 }
