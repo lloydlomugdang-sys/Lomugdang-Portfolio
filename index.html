@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Lloyd Lomugdang</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body class="bg-dark text-light" data-bs-spy="scroll" data-bs-target="#main-nav" data-bs-offset="50">
+
+    <header>
+        <nav id="main-nav" class="navbar navbar-expand-lg navbar-dark bg-black py-3 fixed-top">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="#home">MY PORTFOLIO</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#pks">Personal Knowledge System</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="d-flex align-items-center" style="min-height: 100vh; padding-top: 56px;">
+            <div class="container">
+                <h1 class="display-1 fw-bold mb-4">
+                    My Portfolio
+                </h1>
+                <p class="fs-4 mb-5 text-secondary">
+                    Hi, I'm John Lloyd Lomugdang. Student, and future developer.
+                </p>
+                <div class="d-flex gap-3">
+                    <a href="#projects" class="btn btn-lg btn-outline-light px-4 py-2">My Projects</a>
+                    <a href="#pks" class="btn btn-lg btn-outline-light px-4 py-2">Personal Knowledge System</a>
+                    <a href="#contact" class="btn btn-lg btn-outline-light px-4 py-2">Contact Me</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="container py-5">
+            <h2 class="mb-5 display-5 pt-4">Projects</h2>
+            
+            <div class="row g-4">
+                
+                <div class="col-md-6">
+                    <div class="card-link text-decoration-none text-reset project-card-trigger" 
+                        data-bs-toggle="modal" 
+                        data-bs-target="#projectModal1" 
+                        style="cursor: pointer;"> 
+                        
+                        <div class="card bg-dark border-secondary p-4 h-100">
+                            <div class="card-body">
+                                <h4 class="card-title text-light d-flex justify-content-between align-items-center">
+                                    Budget Tracking System
+                                    <i class="bi bi-camera-fill text-secondary"></i> 
+                                </h4>
+                                <p class="card-text text-secondary mt-3">A Budget Tracking System build especially for students to track their budget allowance</p>
+                                <div class="mt-4">
+                                    <span class="badge text-bg-secondary me-2">HTML</span>
+                                    <span class="badge text-bg-secondary me-2">CSS</span>
+                                    <span class="badge text-bg-secondary me-2">JS</span>
+                                    <span class="badge text-bg-secondary me-2">PHP</span>
+                                    <span class="badge text-bg-secondary me-2">MYSQL</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6">
+                    <div class="card-link text-decoration-none text-reset project-card-trigger" 
+                        data-bs-toggle="modal" 
+                        data-bs-target="#projectModal2" 
+                        style="cursor: pointer;"> 
+                        
+                        <div class="card bg-dark border-secondary p-4 h-100">
+                            <div class="card-body">
+                                <h4 class="card-title text-light d-flex justify-content-between align-items-center">
+                                    Inventory-management System
+                                    <i class="bi bi-camera-fill text-secondary"></i>
+                                </h4>
+                                <p class="card-text text-secondary mt-3">Inventory system that using POSTMAN and SWAGGER </p>
+                                <div class="mt-4">
+                                    <span class="badge text-bg-secondary me-2">PHP</span>
+                                    <span class="badge text-bg-secondary me-2">JS</span>
+                                    <span class="badge text-bg-secondary me-2">POSTMAN</span>
+                                    <span class="badge text-bg-secondary me-2">MONGODB</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6">
+                    <div class="card-link text-decoration-none text-reset project-card-trigger" 
+                        data-bs-toggle="modal" 
+                        data-bs-target="#projectModal3" 
+                        style="cursor: pointer;"> 
+                        
+                        <div class="card bg-dark border-secondary p-4 h-100">
+                            <div class="card-body">
+                                <h4 class="card-title text-light d-flex justify-content-between align-items-center">
+                                    MediCore
+                                    <i class="bi bi-calendar-check-fill text-secondary"></i>
+                                </h4>
+                                <p class="card-text text-secondary mt-3">Healthcare and EHR System</p>
+                                <p class="card-text text-secondary mt-3">Collaborated with Lloyd Christian Perez, Maurice Ann Roberto, and Kimberly Anne Tabanao</p>
+                                <div class="mt-4">
+                                    <span class="badge text-bg-secondary me-2">HTML</span>
+                                    <span class="badge text-bg-secondary me-2">CSS</span>
+                                    <span class="badge text-bg-secondary me-2">JS</span>
+                                    <span class="badge text-bg-secondary me-2">PHP</span>
+                                    <span class="badge text-bg-secondary me-2">XAMPP</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div> 
+        </section>
+        
+        <hr class="text-secondary my-5 container">
+
+        <section id="pks" class="container py-5">
+             <h2 class="mb-5 display-5 pt-4">Personal Knowledge System</h2>
+             
+             <div class="row g-4">
+                 
+                 <div class="col-lg-3 col-md-6">
+                     <div class="card bg-dark border-secondary p-3 h-100">
+                         <div class="card-body">
+                             <div class="d-flex justify-content-between align-items-start mb-3">
+                                 <h5 class="card-title text-light fw-bold">Topic 1: API</h5>
+                                 <i class="bi bi-link-45deg fs-4 text-secondary"></i>
+                             </div>
+                             <p class="card-text text-secondary mb-3">Restful API</p>
+                             <button type="button" class="btn btn-outline-secondary btn-sm" 
+                                     data-bs-toggle="modal" 
+                                     data-bs-target="#pksModal1">
+                                 View Notes
+                             </button>
+                         </div>
+                     </div>
+                 </div>
+                 
+                 <div class="col-lg-3 col-md-6">
+                     <div class="card bg-dark border-secondary p-3 h-100">
+                         <div class="card-body">
+                             <div class="d-flex justify-content-between align-items-start mb-3">
+                                 <h5 class="card-title text-light fw-bold">Topic 2: SWAGGER UI</h5>
+                                 <i class="bi bi-code-square fs-4 text-secondary"></i>
+                             </div>
+                             <p class="card-text text-secondary mb-3">Rest API Documentation Tool</p>
+                             <button type="button" class="btn btn-outline-secondary btn-sm" 
+                                     data-bs-toggle="modal" 
+                                     data-bs-target="#pksModal2">
+                                 View Notes
+                             </button>
+                         </div>
+                     </div>
+                 </div>
+                 
+             </div> 
+         </section>
+         <hr class="text-secondary my-5 container">
+ 
+         <section id="about" class="container py-5">
+             <h2 class="display-5 mb-5 pt-4">About Me & Tech Stack</h2>
+             
+             <div class="row">
+                 <div class="col-md-6 mb-4 mb-md-0">
+                     <h3>About Me</h3>
+                     <p class="lead mt-3">
+                         
+                     </p>
+                     <p class="text-secondary">
+                         With 3 years of studying. I was able to build some projects
+                     </p>
+                 </div>
+ 
+                 <div class="col-md-6">
+                     <h3>Tech Stack</h3>
+                     <div class="d-flex flex-wrap mt-3">
+                         <span class="badge text-bg-secondary me-2 mb-2">HTML</span>
+                         <span class="badge text-bg-secondary me-2 mb-2">CSS</span>
+                         <span class="badge text-bg-secondary me-2 mb-2">JavaScript</span>
+                         <span class="badge text-bg-secondary me-2 mb-2">Bootstrap</span>
+                         <span class="badge text-bg-secondary me-2 mb-2">React.js</span>
+                         <span class="badge text-bg-secondary me-2 mb-2">PYTHON</span>
+                         <span class="badge text-bg-secondary me-2 mb-2">RestApi</span>
+                         <span class="badge text-bg-secondary me-2 mb-2">PHP</span>
+                         <span class="badge text-bg-secondary me-2 mb-2">Git / GitHub</span>
+                         <span class="badge text-bg-secondary me-2 mb-2">Node.js</span>
+                     </div>
+                 </div>
+             </div>
+         </section>
+         
+         <hr class="text-secondary my-5 container">
+ 
+         <section id="contact" class="container py-5">
+             <h2 class="text-center mb-5 display-5 pt-4">Get In Touch</h2>
+ 
+             <form action="YOUR_FORM_SUBMISSION_ENDPOINT" method="POST" class="mx-auto" style="max-width: 700px;">
+                 <div class="row mb-3">
+                     <div class="col-md-6 mb-3 mb-md-0">
+                         <input type="text" class="form-control form-control-lg bg-black text-light border-secondary" placeholder="Name" required>
+                     </div>
+                     <div class="col-md-6">
+                         <input type="email" class="form-control form-control-lg bg-black text-light border-secondary" placeholder="Email" required>
+                     </div>
+                 </div>
+ 
+                 <div class="mb-3">
+                     <input type="text" class="form-control form-control-lg bg-black text-light border-secondary" placeholder="Subject" required>
+                 </div>
+ 
+                 <div class="mb-4">
+                     <textarea class="form-control form-control-lg bg-black text-light border-secondary" placeholder="Your Message" rows="6" required></textarea>
+                 </div>
+ 
+                 <div class="text-center">
+                     <button type="submit" class="btn btn-lg btn-outline-light px-5 py-2">Send Message</button>
+                 </div>
+             </form>
+         </section>
+
+    </main>
+    
+    <div class="modal fade" id="projectModal1" tabindex="-1" aria-labelledby="projectModal1Label" aria-hidden="true">
+      <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content bg-dark text-light border-secondary">
+          <div class="modal-header border-bottom border-secondary">
+            <h5 class="modal-title" id="projectModal1Label">Budget Tracking System Screenshots</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body text-center">
+            <img src="assets/images/budget-tracker-screenshot.jpg" class="img-fluid rounded" alt="Budget Tracking System Screenshot">
+          </div>
+          <div class="modal-footer border-top border-secondary">
+            <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="projectModal2" tabindex="-1" aria-labelledby="projectModal2Label" aria-hidden="true">
+      <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content bg-dark text-light border-secondary">
+          <div class="modal-header border-bottom border-secondary">
+            <h5 class="modal-title" id="projectModal2Label">Inventory-management System Screenshots</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body text-center">
+            <img src="assets/images/inventory-management-screenshot.jpg" class="img-fluid rounded" alt="Inventory Management System Screenshot">
+            <a href="https://inventory-api-blue.vercel.app/api-docs/#/" target="_blank" class="btn btn-primary btn-lg mt-4">
+                View Live Project on Vercel &rarr;
+            </a>
+          </div>
+          <div class="modal-footer border-top border-secondary">
+            <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="modal fade" id="projectModal3" tabindex="-1" aria-labelledby="projectModal3Label" aria-hidden="true">
+      <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content bg-dark text-light border-secondary">
+          <div class="modal-header border-bottom border-secondary">
+            <h5 class="modal-title" id="projectModal3Label">MediCore Screenshot</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body text-center">
+            <img src="assets/images/Medicore.jpg" class="img-fluid rounded" alt="MediCore Screenshot">
+          </div>
+          <div class="modal-footer border-top border-secondary">
+            <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="modal fade" id="pksModal1" tabindex="-1" aria-labelledby="pksModal1Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable">
+            <div class="modal-content bg-dark text-light border-secondary">
+                <div class="modal-header border-bottom border-secondary">
+                    <h5 class="modal-title" id="pksModal1Label">Restful API Notes</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h4>What is REST?</h4>
+                    <p><strong>REST (Representational State Transfer)</strong> is an architectural style for building web services. It's not a protocol but a set of constraints used for creating efficient, reliable, and scalable web applications.</p>
+                    
+                    <h4 class="mt-4">REST Principles</h4>
+                    <ul>
+                        <li><strong>Client-Server Architecture:</strong> The client (frontend) and server (backend) are separate and independent.</li>
+                        <li><strong>Stateless:</strong> Each request from the client to the server must contain all the information needed to understand the request. The server cannot store client context between requests.</li>
+                        <li><strong>Cacheable:</strong> Responses can be defined as cacheable or non-cacheable to improve performance.</li>
+                        <li><strong>Uniform Interface (Key Feature):</strong> Uses standard HTTP methods (GET, POST, PUT, DELETE) to interact with resources.</li>
+                    </ul>
+                    
+                    <h4 class="mt-4">HTTP Methods (CRUD Operations)</h4>
+                    <dl>
+                        <dt><code>GET</code></dt>
+                        <dd>Retrieves a resource (Read operation).</dd>
+                        <dt><code>POST</code></dt>
+                        <dd>Creates a new resource (Create operation).</dd>
+                        <dt><code>PUT</code> / <code>PATCH</code></dt>
+                        <dd>Updates an existing resource (Update operation).</dd>
+                        <dt><code>DELETE</code></dt>
+                        <dd>Removes a resource (Delete operation).</dd>
+                    </dl>
+                </div>
+                <div class="modal-footer border-top border-secondary">
+                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="pksModal2" tabindex="-1" aria-labelledby="pksModal2Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable">
+            <div class="modal-content bg-dark text-light border-secondary">
+                <div class="modal-header border-bottom border-secondary">
+                    <h5 class="modal-title" id="pksModal2Label">SWAGGER UI Notes</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h4>What is Swagger UI?</h4>
+                    <p><strong>Swagger UI</strong> is an open-source tool that renders **API documentation** from an **OpenAPI Specification** (OAS, formerly known as Swagger Spec) file in a visually engaging and interactive way.</p>
+                    
+                    <h4 class="mt-4">Key Benefits</h4>
+                    <ul>
+                        <li><strong>Interactive Documentation:</strong> Allows developers and non-developers to interact with the API endpoints directly in the browser (e.g., testing <code>GET</code> and <code>POST</code> requests).</li>
+                        <li><strong>Standardized Format:</strong> Uses the OpenAPI Specification to ensure documentation is structured and machine-readable.</li>
+                        <li><strong>Easy Integration:</strong> Can be easily integrated into most web application frameworks (like Laravel, Node.js, etc.).</li>
+                    </ul>
+                    
+                    <h4 class="mt-4">How it Works</h4>
+                    <ol>
+                        <li>Developer creates an <strong>OpenAPI Specification (OAS)</strong> file (usually YAML or JSON) detailing the API endpoints, parameters, and response models.</li>
+                        <li>Swagger UI reads this file.</li>
+                        <li>Swagger UI generates a beautiful, interactive web page that lists the API resources and allows users to "Try it out."</li>
+                    </ol>
+                </div>
+                <div class="modal-footer border-top border-secondary">
+                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container text-center py-4 border-top border-secondary">
+            <small class="text-secondary">© 2025. Developed by John Lloyd Lomugdang.</small>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+/* Custom CSS in assets/css/style.css */
+
+/* Makes the anchor tag wrapping the card stretch its full size */
+.card-link {
+    display: block; 
+    height: 100%;
+}
+
+/* Base style for the card itself */
+.card {
+    background-color: #1a1a1a !important; 
+    border: 1px solid #333333 !important; 
+    transition: transform 0.2s, border-color 0.2s; /* Smooth transition */
+}
+
+/* Hover effect on the card (when linked) */
+.card-link:hover .card {
+    transform: translateY(-5px); /* Lifts the card */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); /* Adds a shadow */
+    border-color: #f0f0f0 !important; /* Makes the border slightly lighter */
+}
+
+/* Styling for the description text */
+.card-text {
+    color: #b0b0b0 !important;
+}
+
+/* Styling for the tech stack badges */
+.badge {
+    background-color: #333333 !important;
+    color: #ffffff !important;
+    font-weight: normal;
+    padding: 0.5em 0.75em;
+    border-radius: 0.25rem;
+}
